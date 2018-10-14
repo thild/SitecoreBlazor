@@ -19,6 +19,10 @@ namespace SitecoreBlazorHosted.Server
         {
             services.AddMvc();
 
+            // Adds the Server-Side Blazor services, and those registered by the app project's startup.
+            // This doesn't hurt client side
+            services.AddServerSideBlazor<Client.Startup>();
+
             services.AddResponseCompression(options =>
             {
                 options.MimeTypes = ResponseCompressionDefaults.MimeTypes.Concat(new[]
@@ -44,7 +48,7 @@ namespace SitecoreBlazorHosted.Server
                 routes.MapRoute(name: "default", template: "{controller}/{action}/{id?}");
             });
 
-            app.UseBlazor<Client.Program>();
+            app.UseServerSideBlazor<Client.Startup>();
         }
     }
 }
