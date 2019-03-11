@@ -10,7 +10,12 @@ namespace Foundation.BlazorExtensions.Services
             return jsRuntime.InvokeAsync<bool>("blazorExtensions.hardReload");
         }
 
-
+        public Task SetOnbeforeunload(IJSRuntime jsRuntime)
+        {
+            return jsRuntime.InvokeAsync<System.Action>(
+                "blazorExtensions.setOnbeforeunload"
+                );
+        }
 
     }
 

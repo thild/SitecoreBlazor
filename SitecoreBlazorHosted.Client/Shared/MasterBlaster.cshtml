@@ -7,6 +7,8 @@
 @inject IUriHelper _uriHelper;
 @inject LayoutService _layoutService;
 @inject LanguageService _languageService;
+@inject TrackerService _trackerService;
+@inject InteropService _interopService;
 @inject IJSRuntime _jsRuntimeCurrent;
 
 
@@ -43,15 +45,23 @@
 
     protected override void OnInit()
     {
+
+        //_trackerService.CreateSession();
         _uriHelper.OnLocationChanged += OnLocationChanged;
         Reload();
+    }
+
+    protected override Task OnInitAsync()
+    {
+        _interopService.SetOnbeforeunload(_jsRuntimeCurrent);
+
+        return base.OnInitAsync();
     }
 
     private void OnLocationChanged(object sender, string location) => Reload();
 
     private async void Reload()
     {
-
         bool hasRouteError = Language.HasRouteError();
 
         if (hasRouteError)
@@ -63,11 +73,17 @@
         StateHasChanged();
     }
 
-
+    [JSInvokable]
+    public static void ClosingBrowser()
+    {
+        Console.WriteLine("We who are about to die salut you");
+    }
 
     public void Dispose()
     {
         _uriHelper.OnLocationChanged -= OnLocationChanged;
     }
+
+
 
 }

@@ -3,7 +3,11 @@
 
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.FileProviders;
+using Microsoft.Extensions.Hosting;
+using System.IO;
 
 namespace SitecoreBlazorHosted.Server
 {
@@ -17,12 +21,13 @@ namespace SitecoreBlazorHosted.Server
             services.AddResponseCompression();
             services.AddHttpClient();
 
-             //For server-side
-            //services.AddRazorComponents<Client.Startup>();
+            //For server-side
+            //services.AddRazorComponents();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             app.UseResponseCompression();
 
@@ -31,20 +36,37 @@ namespace SitecoreBlazorHosted.Server
                 app.UseDeveloperExceptionPage();
             }
 
+            //For server-side
+            //app.UseHttpsRedirection();
+            //app.UseStaticFiles();
+            //app.UseFileServer(new FileServerOptions()
+            //{
+            //    FileProvider = new PhysicalFileProvider(
+            //       Path.Combine(
+            //           $@"{Directory.GetParent(Directory.GetCurrentDirectory())}\SitecoreBlazorHosted.Client",
+            //           @"wwwroot"
+            //           )
+            //      ),
+            //    RequestPath = new PathString("")
+            //});
+
+            //app.UseRouting(routes =>
+            //{
+            //    routes.MapRazorPages();
+            //    routes.MapComponentHub<Client.App>("app");
+            //});
+
+
             app.UseMvc(routes =>
             {
                 routes.MapRoute(name: "default", template: "{controller}/{action}/{id?}");
             });
 
-
             //For client-side
             app.UseBlazor<Client.Startup>();
             app.UseBlazorDebugging();
 
-            
-            //For server-side
-            //app.UseStaticFiles();
-            //app.UseRazorComponents<Client.Startup>();
+
         }
     }
 }
