@@ -46,11 +46,12 @@
     protected override void OnInit()
     {
 
-        //_trackerService.CreateSession();
+        _trackerService.CreateSession();
         _uriHelper.OnLocationChanged += OnLocationChanged;
         Reload();
     }
 
+   
     protected override Task OnInitAsync()
     {
         _interopService.SetOnbeforeunload(_jsRuntimeCurrent);

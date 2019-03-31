@@ -23,7 +23,7 @@ namespace SitecoreBlazorHosted.Server
 
             //For server-side
             //services.AddRazorComponents();
-            
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -53,9 +53,8 @@ namespace SitecoreBlazorHosted.Server
             //app.UseRouting(routes =>
             //{
             //    routes.MapRazorPages();
-            //    routes.MapComponentHub<Client.App>("app");
+            //    routes.MapComponentHub<Client.App>("App");
             //});
-
 
             app.UseMvc(routes =>
             {
