@@ -46,10 +46,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Directory.Build.props = Directory.Build.props
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BlazorSite", "BlazorSite", "{D1D88008-C8AF-4A14-A680-63ABB6634542}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HabitatHomeSite", "HabitatHomeSite", "{14D4F13A-EC71-41B1-98E1-5919402A8767}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project.HabitatHomeSite", "Project\HabitatHomeSite\Project.HabitatHomeSite.csproj", "{48F626A4-3D70-4281-8670-E025A680B435}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		BlazorClient|Any CPU = BlazorClient|Any CPU
 		BlazorElectron|Any CPU = BlazorElectron|Any CPU
+		BlazorElektron|Any CPU = BlazorElektron|Any CPU
 		BlazorServer|Any CPU = BlazorServer|Any CPU
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -57,6 +64,8 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{68D208ED-3786-4A9B-AEDD-814AE315B055}.BlazorClient|Any CPU.ActiveCfg = Release|Any CPU
 		{68D208ED-3786-4A9B-AEDD-814AE315B055}.BlazorElectron|Any CPU.ActiveCfg = Debug|Any CPU
+		{68D208ED-3786-4A9B-AEDD-814AE315B055}.BlazorElektron|Any CPU.ActiveCfg = BlazorElektron|Any CPU
+		{68D208ED-3786-4A9B-AEDD-814AE315B055}.BlazorElektron|Any CPU.Build.0 = BlazorElektron|Any CPU
 		{68D208ED-3786-4A9B-AEDD-814AE315B055}.BlazorServer|Any CPU.ActiveCfg = Debug|Any CPU
 		{68D208ED-3786-4A9B-AEDD-814AE315B055}.BlazorServer|Any CPU.Build.0 = Debug|Any CPU
 		{68D208ED-3786-4A9B-AEDD-814AE315B055}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -66,6 +75,8 @@ Global
 		{405D481A-2358-48F2-B5B5-012C7C907504}.BlazorClient|Any CPU.ActiveCfg = BlazorElektron|Any CPU
 		{405D481A-2358-48F2-B5B5-012C7C907504}.BlazorClient|Any CPU.Build.0 = BlazorElektron|Any CPU
 		{405D481A-2358-48F2-B5B5-012C7C907504}.BlazorElectron|Any CPU.ActiveCfg = Debug|Any CPU
+		{405D481A-2358-48F2-B5B5-012C7C907504}.BlazorElektron|Any CPU.ActiveCfg = BlazorElektron|Any CPU
+		{405D481A-2358-48F2-B5B5-012C7C907504}.BlazorElektron|Any CPU.Build.0 = BlazorElektron|Any CPU
 		{405D481A-2358-48F2-B5B5-012C7C907504}.BlazorServer|Any CPU.ActiveCfg = Debug|Any CPU
 		{405D481A-2358-48F2-B5B5-012C7C907504}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{405D481A-2358-48F2-B5B5-012C7C907504}.Debug|Any CPU.Build.0 = Debug|Any CPU
@@ -75,6 +86,8 @@ Global
 		{5A780544-E47E-4754-8B33-899E92280B7E}.BlazorClient|Any CPU.Build.0 = Release|Any CPU
 		{5A780544-E47E-4754-8B33-899E92280B7E}.BlazorElectron|Any CPU.ActiveCfg = Debug|Any CPU
 		{5A780544-E47E-4754-8B33-899E92280B7E}.BlazorElectron|Any CPU.Build.0 = Debug|Any CPU
+		{5A780544-E47E-4754-8B33-899E92280B7E}.BlazorElektron|Any CPU.ActiveCfg = BlazorElektron|Any CPU
+		{5A780544-E47E-4754-8B33-899E92280B7E}.BlazorElektron|Any CPU.Build.0 = BlazorElektron|Any CPU
 		{5A780544-E47E-4754-8B33-899E92280B7E}.BlazorServer|Any CPU.ActiveCfg = Debug|Any CPU
 		{5A780544-E47E-4754-8B33-899E92280B7E}.BlazorServer|Any CPU.Build.0 = Debug|Any CPU
 		{5A780544-E47E-4754-8B33-899E92280B7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -85,6 +98,8 @@ Global
 		{366BF286-D763-471B-8F86-8F3700D8E2D8}.BlazorClient|Any CPU.Build.0 = Release|Any CPU
 		{366BF286-D763-471B-8F86-8F3700D8E2D8}.BlazorElectron|Any CPU.ActiveCfg = Debug|Any CPU
 		{366BF286-D763-471B-8F86-8F3700D8E2D8}.BlazorElectron|Any CPU.Build.0 = Debug|Any CPU
+		{366BF286-D763-471B-8F86-8F3700D8E2D8}.BlazorElektron|Any CPU.ActiveCfg = BlazorElektron|Any CPU
+		{366BF286-D763-471B-8F86-8F3700D8E2D8}.BlazorElektron|Any CPU.Build.0 = BlazorElektron|Any CPU
 		{366BF286-D763-471B-8F86-8F3700D8E2D8}.BlazorServer|Any CPU.ActiveCfg = Debug|Any CPU
 		{366BF286-D763-471B-8F86-8F3700D8E2D8}.BlazorServer|Any CPU.Build.0 = Debug|Any CPU
 		{366BF286-D763-471B-8F86-8F3700D8E2D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -95,6 +110,8 @@ Global
 		{993D9697-A319-4F76-91EB-E12908BF8751}.BlazorClient|Any CPU.Build.0 = Release|Any CPU
 		{993D9697-A319-4F76-91EB-E12908BF8751}.BlazorElectron|Any CPU.ActiveCfg = Debug|Any CPU
 		{993D9697-A319-4F76-91EB-E12908BF8751}.BlazorElectron|Any CPU.Build.0 = Debug|Any CPU
+		{993D9697-A319-4F76-91EB-E12908BF8751}.BlazorElektron|Any CPU.ActiveCfg = BlazorElektron|Any CPU
+		{993D9697-A319-4F76-91EB-E12908BF8751}.BlazorElektron|Any CPU.Build.0 = BlazorElektron|Any CPU
 		{993D9697-A319-4F76-91EB-E12908BF8751}.BlazorServer|Any CPU.ActiveCfg = Debug|Any CPU
 		{993D9697-A319-4F76-91EB-E12908BF8751}.BlazorServer|Any CPU.Build.0 = Debug|Any CPU
 		{993D9697-A319-4F76-91EB-E12908BF8751}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -105,6 +122,8 @@ Global
 		{84454DD2-D745-41E0-9061-5C4508DE9512}.BlazorClient|Any CPU.Build.0 = Release|Any CPU
 		{84454DD2-D745-41E0-9061-5C4508DE9512}.BlazorElectron|Any CPU.ActiveCfg = Debug|Any CPU
 		{84454DD2-D745-41E0-9061-5C4508DE9512}.BlazorElectron|Any CPU.Build.0 = Debug|Any CPU
+		{84454DD2-D745-41E0-9061-5C4508DE9512}.BlazorElektron|Any CPU.ActiveCfg = BlazorElektron|Any CPU
+		{84454DD2-D745-41E0-9061-5C4508DE9512}.BlazorElektron|Any CPU.Build.0 = BlazorElektron|Any CPU
 		{84454DD2-D745-41E0-9061-5C4508DE9512}.BlazorServer|Any CPU.ActiveCfg = Debug|Any CPU
 		{84454DD2-D745-41E0-9061-5C4508DE9512}.BlazorServer|Any CPU.Build.0 = Debug|Any CPU
 		{84454DD2-D745-41E0-9061-5C4508DE9512}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -115,6 +134,8 @@ Global
 		{E82CBD32-29D2-47DD-A684-26C94BBD741C}.BlazorClient|Any CPU.Build.0 = Release|Any CPU
 		{E82CBD32-29D2-47DD-A684-26C94BBD741C}.BlazorElectron|Any CPU.ActiveCfg = Debug|Any CPU
 		{E82CBD32-29D2-47DD-A684-26C94BBD741C}.BlazorElectron|Any CPU.Build.0 = Debug|Any CPU
+		{E82CBD32-29D2-47DD-A684-26C94BBD741C}.BlazorElektron|Any CPU.ActiveCfg = BlazorElektron|Any CPU
+		{E82CBD32-29D2-47DD-A684-26C94BBD741C}.BlazorElektron|Any CPU.Build.0 = BlazorElektron|Any CPU
 		{E82CBD32-29D2-47DD-A684-26C94BBD741C}.BlazorServer|Any CPU.ActiveCfg = Debug|Any CPU
 		{E82CBD32-29D2-47DD-A684-26C94BBD741C}.BlazorServer|Any CPU.Build.0 = Debug|Any CPU
 		{E82CBD32-29D2-47DD-A684-26C94BBD741C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -125,6 +146,8 @@ Global
 		{D4979057-2940-424F-B247-71B60DC379FD}.BlazorClient|Any CPU.Build.0 = Release|Any CPU
 		{D4979057-2940-424F-B247-71B60DC379FD}.BlazorElectron|Any CPU.ActiveCfg = Debug|Any CPU
 		{D4979057-2940-424F-B247-71B60DC379FD}.BlazorElectron|Any CPU.Build.0 = Debug|Any CPU
+		{D4979057-2940-424F-B247-71B60DC379FD}.BlazorElektron|Any CPU.ActiveCfg = BlazorElektron|Any CPU
+		{D4979057-2940-424F-B247-71B60DC379FD}.BlazorElektron|Any CPU.Build.0 = BlazorElektron|Any CPU
 		{D4979057-2940-424F-B247-71B60DC379FD}.BlazorServer|Any CPU.ActiveCfg = Debug|Any CPU
 		{D4979057-2940-424F-B247-71B60DC379FD}.BlazorServer|Any CPU.Build.0 = Debug|Any CPU
 		{D4979057-2940-424F-B247-71B60DC379FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -135,6 +158,8 @@ Global
 		{EB1345A2-C6CD-405E-BF69-7941A633C0A9}.BlazorClient|Any CPU.Build.0 = Release|Any CPU
 		{EB1345A2-C6CD-405E-BF69-7941A633C0A9}.BlazorElectron|Any CPU.ActiveCfg = Debug|Any CPU
 		{EB1345A2-C6CD-405E-BF69-7941A633C0A9}.BlazorElectron|Any CPU.Build.0 = Debug|Any CPU
+		{EB1345A2-C6CD-405E-BF69-7941A633C0A9}.BlazorElektron|Any CPU.ActiveCfg = BlazorElektron|Any CPU
+		{EB1345A2-C6CD-405E-BF69-7941A633C0A9}.BlazorElektron|Any CPU.Build.0 = BlazorElektron|Any CPU
 		{EB1345A2-C6CD-405E-BF69-7941A633C0A9}.BlazorServer|Any CPU.ActiveCfg = Debug|Any CPU
 		{EB1345A2-C6CD-405E-BF69-7941A633C0A9}.BlazorServer|Any CPU.Build.0 = Debug|Any CPU
 		{EB1345A2-C6CD-405E-BF69-7941A633C0A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -145,6 +170,8 @@ Global
 		{A6AE3FC5-1C14-4F18-992F-8DE845F613D6}.BlazorClient|Any CPU.Build.0 = Debug|Any CPU
 		{A6AE3FC5-1C14-4F18-992F-8DE845F613D6}.BlazorElectron|Any CPU.ActiveCfg = Debug|Any CPU
 		{A6AE3FC5-1C14-4F18-992F-8DE845F613D6}.BlazorElectron|Any CPU.Build.0 = Debug|Any CPU
+		{A6AE3FC5-1C14-4F18-992F-8DE845F613D6}.BlazorElektron|Any CPU.ActiveCfg = BlazorElektron|Any CPU
+		{A6AE3FC5-1C14-4F18-992F-8DE845F613D6}.BlazorElektron|Any CPU.Build.0 = BlazorElektron|Any CPU
 		{A6AE3FC5-1C14-4F18-992F-8DE845F613D6}.BlazorServer|Any CPU.ActiveCfg = Debug|Any CPU
 		{A6AE3FC5-1C14-4F18-992F-8DE845F613D6}.BlazorServer|Any CPU.Build.0 = Debug|Any CPU
 		{A6AE3FC5-1C14-4F18-992F-8DE845F613D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -154,11 +181,25 @@ Global
 		{858F9CF7-D1BE-43F9-9E54-FE6B3843C6E4}.BlazorClient|Any CPU.ActiveCfg = Debug|Any CPU
 		{858F9CF7-D1BE-43F9-9E54-FE6B3843C6E4}.BlazorElectron|Any CPU.ActiveCfg = Debug|Any CPU
 		{858F9CF7-D1BE-43F9-9E54-FE6B3843C6E4}.BlazorElectron|Any CPU.Build.0 = Debug|Any CPU
+		{858F9CF7-D1BE-43F9-9E54-FE6B3843C6E4}.BlazorElektron|Any CPU.ActiveCfg = BlazorElektron|Any CPU
+		{858F9CF7-D1BE-43F9-9E54-FE6B3843C6E4}.BlazorElektron|Any CPU.Build.0 = BlazorElektron|Any CPU
 		{858F9CF7-D1BE-43F9-9E54-FE6B3843C6E4}.BlazorServer|Any CPU.ActiveCfg = Debug|Any CPU
 		{858F9CF7-D1BE-43F9-9E54-FE6B3843C6E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{858F9CF7-D1BE-43F9-9E54-FE6B3843C6E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{858F9CF7-D1BE-43F9-9E54-FE6B3843C6E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{858F9CF7-D1BE-43F9-9E54-FE6B3843C6E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48F626A4-3D70-4281-8670-E025A680B435}.BlazorClient|Any CPU.ActiveCfg = Debug|Any CPU
+		{48F626A4-3D70-4281-8670-E025A680B435}.BlazorClient|Any CPU.Build.0 = Debug|Any CPU
+		{48F626A4-3D70-4281-8670-E025A680B435}.BlazorElectron|Any CPU.ActiveCfg = Debug|Any CPU
+		{48F626A4-3D70-4281-8670-E025A680B435}.BlazorElectron|Any CPU.Build.0 = Debug|Any CPU
+		{48F626A4-3D70-4281-8670-E025A680B435}.BlazorElektron|Any CPU.ActiveCfg = Debug|Any CPU
+		{48F626A4-3D70-4281-8670-E025A680B435}.BlazorElektron|Any CPU.Build.0 = Debug|Any CPU
+		{48F626A4-3D70-4281-8670-E025A680B435}.BlazorServer|Any CPU.ActiveCfg = Debug|Any CPU
+		{48F626A4-3D70-4281-8670-E025A680B435}.BlazorServer|Any CPU.Build.0 = Debug|Any CPU
+		{48F626A4-3D70-4281-8670-E025A680B435}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48F626A4-3D70-4281-8670-E025A680B435}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48F626A4-3D70-4281-8670-E025A680B435}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48F626A4-3D70-4281-8670-E025A680B435}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -172,9 +213,12 @@ Global
 		{E82CBD32-29D2-47DD-A684-26C94BBD741C} = {1967A168-3E33-4896-BA6E-0FC4A555923A}
 		{D4979057-2940-424F-B247-71B60DC379FD} = {1967A168-3E33-4896-BA6E-0FC4A555923A}
 		{70268BB7-C322-48A1-B420-155DE0A3FDB2} = {38AAD945-9531-4D71-A8B8-31708BDB6A64}
-		{EB1345A2-C6CD-405E-BF69-7941A633C0A9} = {70268BB7-C322-48A1-B420-155DE0A3FDB2}
+		{EB1345A2-C6CD-405E-BF69-7941A633C0A9} = {D1D88008-C8AF-4A14-A680-63ABB6634542}
 		{A6AE3FC5-1C14-4F18-992F-8DE845F613D6} = {571772E8-D061-4C6A-89D1-89A95A25E4B9}
 		{571772E8-D061-4C6A-89D1-89A95A25E4B9} = {775B8268-1BED-4DC2-988D-D1D221FB5000}
+		{D1D88008-C8AF-4A14-A680-63ABB6634542} = {70268BB7-C322-48A1-B420-155DE0A3FDB2}
+		{14D4F13A-EC71-41B1-98E1-5919402A8767} = {70268BB7-C322-48A1-B420-155DE0A3FDB2}
+		{48F626A4-3D70-4281-8670-E025A680B435} = {14D4F13A-EC71-41B1-98E1-5919402A8767}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F42D4C48-4A07-4F65-883B-DAED618FB590}

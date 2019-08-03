@@ -1,0 +1,47 @@
+﻿@using Foundation.BlazorExtensions.CustomBlazorRouter
+@using Foundation.BlazorExtensions.Components
+@using Foundation.BlazorExtensions.Extensions
+@using Foundation.BlazorExtensions.Services
+
+
+
+@implements Microsoft.AspNetCore.Components.IComponent
+@inject Microsoft.AspNetCore.Components.IUriHelper _uriHelper;
+@inject BlazorItemsService _blazorItemsService;
+
+
+
+    <ContextStateProvider>
+        @*<Router AppAssembly=typeof(Program).Assembly />*@
+        @*Instead of using default router from Blazor we will have a customized version, which will allow us to add routes*@
+        <CustomRouter RouteValues="@RoutesData" />
+    </ContextStateProvider>
+
+
+
+@code
+    {
+
+    private RouterDataRoot RoutesData = null;
+
+    protected override void OnInit()
+    {
+        RoutesData = _blazorItemsService.CreateRoutes();
+    }
+
+    protected override void OnAfterRender()
+    {
+        string relative = _uriHelper.ToBaseRelativePath(_uriHelper.GetBaseUri(), _uriHelper.GetAbsoluteUri());
+
+
+        if (relative == "")
+        {
+            _uriHelper.NavigateTo("en".AddBaseUrl(_uriHelper));
+
+        }
+
+    }
+
+}
+
+

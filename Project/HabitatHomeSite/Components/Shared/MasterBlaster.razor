@@ -17,20 +17,20 @@
 
 
 
-<div class="main">
-
-    <BlazorPlaceholder Name="navbar">
-        @Body
-    </BlazorPlaceholder>
-
-    <main role="main" class="container">
+<div id="wrapper">
+    <header>
+        <BlazorPlaceholder Name="header">
+            @Body
+        </BlazorPlaceholder>
+    </header>
+    <main>
         <BlazorPlaceholder Name="main">
             @Body
         </BlazorPlaceholder>
     </main>
 
 
-    <footer class="container">
+    <footer>
 
         <BlazorPlaceholder Name="footer">
             @Body
@@ -38,7 +38,6 @@
 
     </footer>
 </div>
-
 
 @code
 {
